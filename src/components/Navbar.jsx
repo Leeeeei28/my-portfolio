@@ -1,10 +1,11 @@
+import "./Navbar.css";
 
 function Navbar() {
     
     return (
         <nav>
             <div className="nav-logo">
-                <p>&lt;/&gt; Leeei</p>
+                <p><span className="logo">&lt;/&gt;</span> Leeei</p>
             </div>
             <ul>
                 <li><a href="#home">Home</a></li>
