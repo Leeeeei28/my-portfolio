@@ -14,6 +14,9 @@ function Navbar() {
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div className="burger-menu">
+                <p>burger menu</p>
+            </div>
         </nav>
     );
 }
