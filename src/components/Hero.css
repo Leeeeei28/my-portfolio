@@ -1,0 +1,92 @@
+section{
+    background-color: var(--bg-primary);
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 5%;
+    gap: 10px;
+} 
+section .hero-description{
+    color: var(--text-primary);
+    width: 50%;
+}
+section .hero-description h1, h2{
+    font-family: var(--font-heading);
+}
+section .hero-description h1{
+    font-size: 30px;
+}
+section .hero-description h2{
+    margin-bottom: 10px;
+    letter-spacing: 8px;
+}
+section .hero-description .my-name{
+    color: var(--primary-blue);
+}
+section .hero-description p{
+    font-size: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-family: var(--font-body);
+    color: var(--text-primary);
+}
+section .hero-description .project-links{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0;
+}
+section .hero-description .project-links a{
+    color: var(--text-primar);
+    background: transparent;
+    font-size: 8px;
+    font-weight: var(--font-body);
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-blue);
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+section .hero-description .project-links a:hover{
+    background-color: var(--primary-blue);
+}
+section .hero-description .project-links a:active{
+    opacity: 0.5;
+}
+section .hero-description .contact-links{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+section .hero-description .contact-links a{
+    font-size: 18px;
+    color: var(--text-primary);
+    transform: 0.5s;
+}
+section .hero-description .contact-links a:hover{
+    color: var(--primary-blue);
+}
+section .hero-description .contact-links a:active{
+    opacity: 0.5;
+}
+section .hero-profile{
+    color: var(--text-primary);
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+section .hero-profile img{
+    width: 70%;
+    height: 80%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+section .hero-profile img:hover{
+    border-radius: 10px;
+}
