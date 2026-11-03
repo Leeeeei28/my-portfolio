@@ -6,7 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 function Hero() {
     return (
-        <section id="#home">
+        <section id="home" className="hero-section">
             <div className="hero-description">
                 <h1>Hi, <span className="my-name">I'm Bryle C. Condrada</span></h1>
                 <h2>Frontend Developer</h2>
@@ -20,14 +20,14 @@ function Hero() {
                 </p>
 
                 <div className="project-links">
-                    <a href="#">View My Projects</a>
-                    <a href="#">Download Resume</a>
+                    <a href="#projects">View My Projects</a>
+                    <a href="#" download>Download Resume</a>
                 </div>
 
                 <div className="contact-links">
-                    <a href="#"><FaGithub /></a>
-                    <a href="#"><CiLinkedin /></a>
-                    <a href="#"><MdOutlineMail /></a>
+                    <a href="https://github.com/Leeeeei28" target="_blank" rel="noreferrer"><FaGithub /></a>
+                    <a href="#" target="_blank" rel="noreferrer"><CiLinkedin /></a>
+                    <a href="mailto:condradanish@gmail.com"><MdOutlineMail /></a>
                 </div>
             </div>
 
