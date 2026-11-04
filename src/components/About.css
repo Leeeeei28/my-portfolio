@@ -54,3 +54,52 @@
     border-radius: 10px;
     margin-right: 2px;
 }
+.about-section .about-description .about-title{
+    border: 2px solid white;
+    font-family: var(--font-heading);
+    padding: 0;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 1;
+    text-align: justify;
+    margin: 10px 0;
+}
+.about-section .about-description .about-title .about-title-highlight{
+    color: var(--accent-blue);
+}
+.about-section .about-description .about-introduction{
+    border: 2px solid white;
+    margin: 5px 0;
+    font-family: var(--font-body);
+    text-align: justify;
+    font-size: 12px;
+}
+.about-section .about-description .about-introduction p{
+    margin: 5px 0;
+}
+.about-section .about-description .about-info{
+    border: 2px solid white;
+    margin: 10px 0;
+    font-size: 12px;
+    display: flex;
+    height: 100px;
+    gap: 5px;
+    color: var(--text-primary);
+}
+.about-section .about-description .about-info p{
+    border: 2px solid yellow;
+    height: 75%;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    color: var(--text-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
