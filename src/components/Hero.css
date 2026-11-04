@@ -8,39 +8,40 @@ section{
     justify-content: space-around;
     padding: 3% 5%;
     gap: 10px;
+    position: relative;
 } 
 section .hero-description{
     color: var(--text-primary);
     width: 50%;
 }
-section .hero-description h1, 
-section .hero-description h2{
+section .hero-description .hero-title h1, 
+section .hero-description .hero-title h2{
     font-family: var(--font-heading);
 }
-section .hero-description h1{
+section .hero-description .hero-title h1{
     font-size: 30px;
 }
-section .hero-description h2{
+section .hero-description .hero-title h2{
     margin-bottom: 10px;
     letter-spacing: 8px;
 }
-section .hero-description .my-name{
+section .hero-description .hero-title .my-name{
     color: var(--primary-blue);
 }
-section .hero-description p{
+section .hero-description .hero-introduction p{
     font-size: 10px;
     margin-bottom: 10px;
     text-align: justify;
     font-family: var(--font-body);
     color: var(--text-primary);
 }
-section .hero-description .project-links{
+section .hero-description .hero-introduction .project-links{
     display: flex;
     width: 100%;
     gap: 10px;
     margin: 20px 0;
 }
-section .hero-description .project-links a{
+section .hero-description .hero-introduction .project-links a{
     color: var(--text-primary);
     background: transparent;
     font-size: 8px;
@@ -52,26 +53,27 @@ section .hero-description .project-links a{
     transition: 0.5s;
     text-decoration: none;
 }
-section .hero-description .project-links a:hover{
+section .hero-description .hero-introduction .project-links a:hover{
     background-color: var(--primary-blue);
 }
-section .hero-description .project-links a:active{
+section .hero-description .hero-introduction .project-links a:active{
     opacity: 0.5;
 }
-section .hero-description .contact-links{
+section .hero-description .hero-introduction .contact-links{
     display: flex;
     gap: 20px;
     padding: 5px;
 }
-section .hero-description .contact-links a{
+section .hero-description .hero-introduction .contact-links a{
     font-size: 18px;
     color: var(--text-primary);
     transition: 0.5s;
 }
-section .hero-description .contact-links a:hover{
+section .hero-description .hero-introduction .contact-links a:hover{
     color: var(--primary-blue);
+    transform: scale(1.5);
 }
-section .hero-description .contact-links a:active{
+section .hero-description .hero-introduction .contact-links a:active{
     opacity: 0.5;
 }
 section .hero-profile{
@@ -92,4 +94,78 @@ section .hero-profile img{
 }
 section .hero-profile img:hover{
     border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    section{
+        padding: 0;
+    }
+    section .hero-description{
+        width: 100%;
+    }
+    section .hero-description .hero-title{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+    section .hero-description .hero-title h1, 
+    section .hero-description .hero-title h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    section .hero-description .hero-introduction{
+        width: 100%;
+        height: 140px;
+    }
+    section .hero-description .hero-introduction .intro{
+        margin-top: 10px;
+    }
+    section .hero-description .hero-introduction p{
+        font-size: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    section .hero-description .hero-introduction .project-links{
+        height: 30px;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    section .hero-description .hero-introduction .project-links a{
+        padding: 8px 20px;
+    }
+    section .hero-description .hero-introduction .contact-links{
+        height: 50px;
+        margin-top: -20px;
+        display: flex;
+        justify-content: center;
+    }
+    section .hero-description .hero-introduction .contact-links a{
+        font-size: 15px;
+    }
+    section .hero-description .hero-introduction .contact-links a:hover{
+    transform: scale(1.2);
+}
+    section .hero-profile{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        margin-top: -10px;
+        height: 150px;
+        padding: 0;
+    }
+    section .hero-profile img{  
+        width: 130px;
+        height: 130px;
+    }
+    section .hero-description .hero-introduction{
+        position: absolute;
+        bottom: 0;
+        margin-top: -50px;
+        padding: 0;
+    }
 }
