@@ -4,9 +4,11 @@ import profile from "../assets/profile.jpg";
 function About() {
     return (
         <section id="about" className="about-section">
+
             <div className="about-profile">
-                <img src alt="profile" />
+                <img src={profile} alt="profile" />
             </div>
+
             <div className="about-description">
                 <h2>ABOUT ME</h2>
                 <div className="about-title">
@@ -42,6 +44,7 @@ function About() {
                     <p>Philippines</p>
                 </div>
             </div>
+
         </section>
     )
 }
