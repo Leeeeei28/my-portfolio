@@ -104,3 +104,51 @@
 .about-section .about-description .about-info .info .logo{
     font-size: 14px;
 }
+
+@media (max-width: 600px){
+    .about-section .about-description h5{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    .about-section .about-profile img{
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        width: 35%;
+        height: 20%;
+    }
+    .about-section .about-description .about-title{
+        position: absolute;
+        left: 10px;
+        top: 30%;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        line-height: 1;
+        text-align: left;
+        margin: 15px 0;
+        font-size: 8px;
+        width: 50%;
+    }
+    .about-section .about-description .about-introduction{
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        width: 50%;
+        font-size: 8px;
+        margin: 0;
+    }
+    .about-section .about-description .about-info{
+        width: 50%;
+        position: absolute;
+        top: 33%;
+        right: 0;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .about-section .about-description .about-info .info{
+        font-size: 10px;
+        height: 60%;
+        width: 80%;
+    }
+}   
