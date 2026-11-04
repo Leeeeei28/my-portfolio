@@ -37,4 +37,20 @@
     border: 2px solid white;
     width: 65%;
     color: var(--text-primary);
+    padding: 5px;
+}
+.about-section .about-description h5{
+    color: var(--accent-blue);
+    font-family: var(--font-heading);
+    align-items: center;
+}
+.about-section .about-description h5::before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 3px;
+    background-color: var(--accent-blue);
+    border-radius: 10px;
+    margin-right: 2px;
 }

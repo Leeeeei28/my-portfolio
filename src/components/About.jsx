@@ -10,10 +10,10 @@ function About() {
             </div>
 
             <div className="about-description">
-                <h2>ABOUT ME</h2>
+                <h5>ABOUT ME</h5>
                 <div className="about-title">
                     <h1>
-                        Turning Ideas into
+                        Turning Ideas into <br />
                         <span className="about-title-highlight">
                             Digital Solutions
                         </span>
