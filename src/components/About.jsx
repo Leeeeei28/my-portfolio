@@ -1,5 +1,9 @@
 import "./About.css";
 import profile from "../assets/profile.jpg";
+import { RiGraduationCapFill } from "react-icons/ri";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
+import { GoGoal } from "react-icons/go";
 
 function About() {
     return (
@@ -38,10 +42,22 @@ function About() {
                 </div>
 
                 <div className="about-info">
-                    <p>BS INFORMATION TECHNOLOGY</p>
-                    <p>Frontend Development</p>
-                    <p>Aspiring Full-Stack Developer</p>
-                    <p>Philippines</p>
+                    <div className="info">
+                        <span className="logo"><RiGraduationCapFill /></span>
+                        <span>BS INFORMATION TECHNOLOGY</span>
+                    </div>
+                    <div className="info">
+                        <span className="logo"><FaCode /></span>
+                        <span>Frontend Development</span>
+                    </div>
+                    <div className="info">
+                        <span className="logo"><GoGoal /></span>
+                        <span>Aspiring Full-Stack Developer</span>
+                    </div>
+                    <div className="info">
+                       <span className="logo"><FaMapMarkerAlt /></span>
+                       <span>Philippines</span>
+                    </div>
                 </div>
             </div>
 
