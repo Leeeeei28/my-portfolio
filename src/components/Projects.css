@@ -19,16 +19,18 @@
 .projects-section h1{
     color: var(--primary-blue);
     position: relative;
+    width: 100%;
+    text-align: center;
 }
 .projects-section h1::before{
     content: "";
-    background-color: var(--primary-blue);
+    position: absolute;
     width: 80px;
     height: 3px;
-    display: inline-block;
-    position: absolute;
+    background-color: var(--primary-blue);
     bottom: -5px;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 10px;
 }
 .projects-section .description{
@@ -36,39 +38,42 @@
     margin-top: 5px;
 }
 .projects-section .my-projects{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
     width: 100%;
-    height: 80vh;
+    height: auto;
+    margin-top: 30px;
 }
 .projects-section .my-projects .projects{
-    width: 50%;
-    height: 100%;
-    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    overflow: hidden;
     border: 1px solid rgba(56, 189, 248, 0.2);
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .projects-section .my-projects .projects img{
     width: 100%;
-    height: 45%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 .projects-section .my-projects .projects h3{
     color: var(--text-primary);
     font-family: var(--font-heading);
     margin: 5px;
     color: var(--accent-blue);
+    font-size: 12px;
 }
 .projects-section .my-projects .projects p{
     color: var(--text-secondary);
     font-family: var(--font-body);
-    font-size: 10px;
+    font-size: 8px;
     text-align: left;
     margin: 5px;
 }
@@ -93,10 +98,41 @@
     margin: 5px;
     font-size: 14px;
     padding: 5px;
+    font-size: 10px;
 }
 .projects-section .my-projects .demo-projects a:hover{
     color: var(--primary-blue);
 }
 .projects-section .my-projects .demo-projects a:active{
     opacity: 0.5;
+}
+
+
+@media (max-width: 900px) {
+    .projects-section .my-projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-section {
+        padding: 50px 5%;
+    }
+    .projects-section .my-projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .projects-section .my-projects .projects h3 {
+        font-size: 18px;
+        margin: 12px;
+    }
+    .projects-section .my-projects .projects p {
+        font-size: 14px;
+        margin: 12px;
+    }
+    .projects-section .my-projects .technologies-used {
+        flex-wrap: wrap;
+        gap: 5px;
+        margin: 12px;
+    }
 }

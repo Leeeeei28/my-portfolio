@@ -1,5 +1,7 @@
 import "./Projects.css";
-import profile from "../assets/profile.jpg";
+import expsensetracker from "../assets/expensetracker.png";
+import ecommerce from "../assets/ecommerce.png";
+import adminsupport from "../assets/adminsupport.png";
 
 function Projects() {
     return (
@@ -11,11 +13,11 @@ function Projects() {
             </p>
             <div className="my-projects">
                 <div className="projects">
-                    <img src={profile} alt="project"/>
-                    <h3>Restaurant</h3>
+                    <img src={expsensetracker} alt="project"/>
+                    <h3>Personal Expense Tracker Dashboard</h3>
                     <p>
-                        Lorem ipsum is a scrambled, nonsensical pseudo-Latin placeholder or dummy 
-                        text widely utilized across the graphic design, publishing, web development, 
+                        A personal finance dashboard designed to help users track their income, expenses, and monthly budgets. 
+                        It will feature transaction management, spending summaries, and visual reports to make personal financial tracking easier and more organized. 
                     </p>
                     <div className="technologies-used">
                         <p>HTML</p>
@@ -29,11 +31,11 @@ function Projects() {
                     </div>
                 </div>
                 <div className="projects">
-                    <img src={profile} alt="project"/>
-                    <h3>Student Management</h3>
+                    <img src={ecommerce} alt="project"/>
+                    <h3>E-Commerce Shopping Application</h3>
                     <p>
-                        Lorem ipsum is a scrambled, nonsensical pseudo-Latin placeholder or dummy 
-                        text widely utilized across the graphic design, publishing, web development,
+                        A responsive e-commerce application designed to provide users with a smooth online shopping experience. 
+                        It will include product browsing, search and filtering, shopping cart management, and a checkout interface.
                     </p>
                     <div className="technologies-used">
                         <p>HTML</p>
@@ -47,11 +49,11 @@ function Projects() {
                     </div>
                 </div>
                 <div className="projects">
-                    <img src={profile} alt="project"/>
-                    <h3>Expense Tracker</h3>
+                    <img src={adminsupport} alt="project"/>
+                    <h3>Admin Support Ticket Management Dashboard</h3>
                     <p>
-                        Lorem ipsum is a scrambled, nonsensical pseudo-Latin placeholder or dummy 
-                        text widely utilized across the graphic design, publishing, web development,
+                        A customer support management dashboard designed to help teams organize, monitor, and manage customer concerns efficiently. 
+                        It will feature ticket creation, priority levels, status tracking, and filtering tools for a more structured support workflow.
                     </p>
                     <div className="technologies-used">
                         <p>HTML</p>
