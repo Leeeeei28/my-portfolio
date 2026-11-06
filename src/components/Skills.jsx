@@ -23,30 +23,81 @@ function Skills() {
                 <div className="cards">
                     <h4>Frontend Development</h4>
                     <div className="card">
-                        <img src={html} alt="html" />
-                        <img src={css} alt="css" />
-                        <img src={js} alt="javascript" />
-                        <img src={reactjs} alt="reactjs" />
+
+                        <div className="card-img">
+                            <img src={html} alt="html" />
+                            <label>HTML</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={css} alt="css" />
+                            <label>CSS</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={js} alt="javascript" />
+                            <label>JavaScript</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={reactjs} alt="reactjs" />
+                            <label>React JS</label>
+                        </div>
+
                     </div>
                 </div>
 
                 <div className="cards">
                     <h4>Tools</h4>
                     <div className="card">
-                        <img src={git} alt="git" />
-                        <img src={github} alt="github" />
-                        <img src={vscode} alt="vscode" />
-                        <img src={vite} alt="vite" />
+
+                        <div className="card-img">
+                            <img src={git} alt="git" />
+                            <label>Git</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={github} alt="github" />
+                            <label>Github</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={vscode} alt="vscode" />
+                            <label>VS Code</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={vite} alt="vite" />
+                            <label>Vite</label>
+                        </div>
+
                     </div>
                 </div>
 
                 <div className="cards">
                     <h4>Currently Learning</h4>
                     <div className="card">
-                        <img src={bootstrap} alt="bootstrap" />
-                        <img src={tailwindcss} alt="tailwindcss" />
-                        <img src={typescript} alt="typescript" />
-                        <img src={fullstack} alt="fullstack" />
+
+                        <div className="card-img">
+                            <img src={bootstrap} alt="bootstrap" />
+                            <label>Bootstrap</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={tailwindcss} alt="tailwindcss" />
+                            <label>Tailwind CSS</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={typescript} alt="typescript" />
+                            <label>TypeScript</label>
+                        </div>
+
+                        <div className="card-img">
+                            <img src={fullstack} alt="fullstack" />
+                            <label>Full Stack</label>
+                        </div>
+
                     </div>
                 </div>
 

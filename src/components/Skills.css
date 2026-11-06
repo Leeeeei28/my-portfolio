@@ -54,27 +54,82 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .skills-section .my-technologies .cards h4{
-    color: var(--text-primary);
+    color: var(--primary-blue);
     font-family: var(--font-heading);
     position: absolute;
     top: 15px;
     left: 20px;
 }
 .skills-section .my-technologies .cards .card{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
     width: 100%;
-    height: 30vh;
+    height: auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.skills-section .my-technologies .cards .card .card-img{
+    width: 100%;
+    min-height: 130px;
+    height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 .skills-section .my-technologies .cards .card img{
-    width: 10%;
-    height: 80%;
-    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.skills-section .my-technologies .cards .card label{
+    color: var(--text-primary);
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .skills-section .my-technologies .cards .card {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-section {
+        padding: 60px 5% 30px;
+    }
+    .skills-section h3 {
+        top: 15px;
+        left: 5%;
+    }
+    .skills-section p {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .skills-section .my-technologies .cards {
+        min-height: auto;
+        padding-top: 55px;
+        padding-bottom: 10px;
+    }
+    .skills-section .my-technologies .cards h4 {
+        top: 10px;
+        left: 15px;
+        margin: 0;
+    }
+    .skills-section .my-technologies .cards .card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 10px;
+        gap: 10px;
+        margin-top: -20px;
+    }
 }
