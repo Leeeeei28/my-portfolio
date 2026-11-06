@@ -1,0 +1,40 @@
+.skills-section{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bg-primary);
+    padding: 3% 5%;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-section h3{
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    color: var(--accent-blue);
+    letter-spacing: 2px;
+    font-family: var(--font-heading);
+}
+.skills-section h3::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--accent-blue);
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.skills-section p{
+    color: var(--text-secondary);
+    margin-top: -10px;
+}
+.skills-section .my-technologies{
+    border: 2px solid white;
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+}
