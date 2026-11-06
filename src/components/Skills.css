@@ -35,6 +35,29 @@
 .skills-section .my-technologies{
     border: 2px solid white;
     width: 100%;
-    min-height: 80vh;
+    min-height: 80vh    ;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.skills-section .my-technologies .cards{
+    position: relative;
+    border: 2px solid white;
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+}
+.skills-section .my-technologies .cards h4{
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    position: absolute;
+    left: 0;
+}
+.skills-section .my-technologies .cards div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }

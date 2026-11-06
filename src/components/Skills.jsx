@@ -8,9 +8,9 @@ function Skills() {
 
             <div className="my-technologies">
 
-                <div className="my-skills">
+                <div className="cards">
                     <h4>Frontend Development</h4>
-                    <div>
+                    <div className="my-skills">
                         <img alt="html" />
                         <img alt="css" />
                         <img alt="javascript" />
@@ -18,9 +18,9 @@ function Skills() {
                     </div>
                 </div>
 
-                <div className="my-tools">
+                <div className="cards">
                     <h4>Tools</h4>
-                    <div>
+                    <div className="my-tools">
                         <img alt="git" />
                         <img alt="github" />
                         <img alt="vscode" />
@@ -28,9 +28,9 @@ function Skills() {
                     </div>
                 </div>
 
-                <div className="currently-learning">
+                <div className="cards">
                     <h4>Currently Learning</h4>
-                    <div>
+                    <div className="currently-learning">
                         <img alt="bootstrap" />
                         <img alt="tailwindcss" />
                         <img alt="typescript" />
