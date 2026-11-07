@@ -5,7 +5,7 @@ import { MdOutlineMail } from "react-icons/md";
 
 function Footer() {
     return (
-        <footer id="footer" className="footer-section">
+        <footer id="contact" className="footer-section">
 
             <h3>Let's Connect!</h3>
             <p>Have a project in mind or an opportunity to collaborate? Feel free to react out.</p>

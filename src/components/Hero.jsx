@@ -25,7 +25,7 @@ function Hero() {
 
                     <div className="project-links">
                         <a href="#projects">View My Projects</a>
-                        <a href="#" download>Download Resume</a>
+                        <a href="/resume.pdf" download>Download Resume</a>
                     </div>
 
                     <div className="contact-links">
