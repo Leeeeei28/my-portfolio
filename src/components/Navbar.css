@@ -55,6 +55,14 @@ nav .nav-links li a:hover{
 nav .nav-links li a:active{
     opacity: 0.5;
 }
+nav .toggle-theme{
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
 @media(max-width: 768px){
     nav .burger-menu{

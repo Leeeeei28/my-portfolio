@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { useState } from "react";
-import { CiLight } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 
 function Navbar({isDarkMode, toggleTheme}) {
     
@@ -38,8 +38,8 @@ function Navbar({isDarkMode, toggleTheme}) {
                 <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
             </ul>
 
-            <button onClick={toggleTheme} aria-label="Toggle color theme">
-                {isDarkMode ? <CiLight /> : <MdDarkMode />}
+            <button onClick={toggleTheme} className="toggle-theme" aria-label="Toggle color theme">
+                {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
             </button>
         </nav>
     );
