@@ -15,7 +15,7 @@ function Hero() {
 
                 <div className="hero-introduction">
                     <p className="intro">
-                        I'm an aspiring Software Engineer currently focused on Frontend Development. 
+                        I'm an aspiring Full Stack Developer currently focused on Frontend Development. 
                         I enjoy building responsive and user-friendly web applications using modern web technologies.
                     </p>
                     <p>

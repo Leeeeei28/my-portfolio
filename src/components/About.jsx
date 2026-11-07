@@ -26,7 +26,7 @@ function About() {
 
                 <div className="about-introduction">
                     <p>
-                        I'm an aspiring Software Engineer and a 
+                        I'm an aspiring Full Stack and a 
                         Bachelor of Science in Information 
                         Technology student with a strong interest in software development.
                     </p>

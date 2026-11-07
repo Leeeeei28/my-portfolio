@@ -1,8 +1,10 @@
 import "./Navbar.css";
 import { useState } from "react";
+import { CiLight } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
-function Navbar() {
-
+function Navbar({isDarkMode, toggleTheme}) {
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     function toggleMenu() {
@@ -35,6 +37,10 @@ function Navbar() {
                 <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
                 <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
             </ul>
+
+            <button onClick={toggleTheme} aria-label="Toggle color theme">
+                {isDarkMode ? <CiLight /> : <MdDarkMode />}
+            </button>
         </nav>
     );
 }

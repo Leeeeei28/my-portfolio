@@ -34,7 +34,7 @@ section .hero-description .hero-introduction p{
     margin-bottom: 12px;
     text-align: justify;
     font-family: var(--font-body);
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 section .hero-description .hero-introduction .project-links{
     display: flex;
