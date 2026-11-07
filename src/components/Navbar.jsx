@@ -2,6 +2,8 @@ import "./Navbar.css";
 import { useState } from "react";
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io";
+import { HiOutlineX } from "react-icons/hi";
 
 function Navbar({isDarkMode, toggleTheme}) {
     
@@ -17,18 +19,10 @@ function Navbar({isDarkMode, toggleTheme}) {
     
     return (
         <nav>
+            
             <div className="nav-logo">
                 <p><span className="logo">&lt;&gt;</span> Leeei<span className="logo">&lt;/&gt;</span></p>
             </div>
-
-            <button
-                className="burger-menu"
-                onClick={toggleMenu}
-                aria-label="Toggle navigation menu"
-                aria-expanded={isMenuOpen}
-            >
-                {isMenuOpen ? "X" : "☰"}
-            </button>
 
             <ul className={isMenuOpen ? "nav-links open" : "nav-links"}>
                 <li><a href="#home" onClick={closeMenu}>Home</a></li>
@@ -38,9 +32,21 @@ function Navbar({isDarkMode, toggleTheme}) {
                 <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
             </ul>
 
-            <button onClick={toggleTheme} className="toggle-theme" aria-label="Toggle color theme">
-                {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
-            </button>
+            <div className="nav-actions">
+                <button className="toggle-theme" onClick={toggleTheme}>
+                    {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
+                </button>
+
+                <button
+                    className="burger-menu"
+                    onClick={toggleMenu}
+                    aria-label="Toggle navigation menu"
+                    aria-expanded={isMenuOpen}
+                >
+                    {isMenuOpen ? <HiOutlineX /> : <IoMdMenu />}
+                </button>
+            </div>
+
         </nav>
     );
 }

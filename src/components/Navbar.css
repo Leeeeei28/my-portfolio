@@ -21,7 +21,12 @@ nav .nav-logo .logo{
 nav .nav-logo p{
     color: var( --text-primary);
 }
-nav .burger-menu{
+nav .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav .nav-actions .burger-menu{
     display: none;
     background: none;
     border: none;
@@ -55,7 +60,7 @@ nav .nav-links li a:hover{
 nav .nav-links li a:active{
     opacity: 0.5;
 }
-nav .toggle-theme{
+nav .nav-actions .toggle-theme{
     background: transparent;
     border: none;
     color: var(--text-primary);
@@ -65,8 +70,15 @@ nav .toggle-theme{
 }
 
 @media(max-width: 768px){
-    nav .burger-menu{
+    nav .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    nav .nav-actions .burger-menu {
         display: block;
+        position: static;
+        margin: 0;
     }
     nav .nav-links{
         display: none;
