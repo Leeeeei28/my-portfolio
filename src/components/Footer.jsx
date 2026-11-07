@@ -16,9 +16,11 @@ function Footer() {
                 <a href="mailto:condradanish@gmail.com"><MdOutlineMail /></a>
             </div>
 
+            <hr />
+
             <div className="arrow-up">
                 <p>&copy; 2026 Your Name. All rights reserved.</p>
-                <a href="#">Back to top &uarr;</a>
+                <a href="home">Back to top &uarr;</a>
             </div>
 
         </footer>
